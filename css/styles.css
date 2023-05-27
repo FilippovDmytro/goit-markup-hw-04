@@ -1,7 +1,7 @@
 :root {
   --primary-brand: #4d5ae5;
   --navy-blue: #2e2f42;
-  --subtle-text: #8e8f99;
+  --subtitle-text: #8e8f99;
   --cloud: #f4f4fd;
   --action-color: #404bbf;
   --white: #ffffff;
@@ -354,11 +354,9 @@ body {
   fill: var(--cloud);
 }
 
-. .castomers {
-}
-
 .customers-title {
   display: flex;
+  justify-content: center;
 
   font-size: 36px;
   line-height: 1.11;
@@ -373,7 +371,7 @@ body {
   display: flex;
   gap: 24px;
 }
-.customers-item {
+.cust-item {
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
@@ -384,8 +382,15 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--subtitle-text);
   border-radius: 4px;
+  color: var(--subtitle-text);
+  fill: currentColor;
+}
+.cust-link:hover,
+.cust-link:focus {
+  color: #404bbf;
+  border-color: #404bbf;
 }
 
 .footer {
@@ -397,6 +402,7 @@ body {
 
 .foot-all {
   display: flex;
+  align-items: baseline;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 156px;
@@ -436,10 +442,12 @@ body {
   letter-spacing: 2%;
   color: var(--white);
   margin-bottom: 16px;
+  margin-left: 120px;
 }
 .media {
   display: flex;
   gap: 16px;
+  margin-left: 120px;
 }
 
 .list-media {
@@ -455,6 +463,7 @@ body {
   height: 100%;
   background-color: var(--primary-brand);
   border-radius: 50%;
+  fill: var(--cloud);
 }
 
 .link-media:hover,
